@@ -13,18 +13,134 @@
 html {
   background-color: var(--violet);
   background-image: url(../images/bg-desktop.svg);
-  background-size: cover;
+  background-size: auto 50rem;
   background-repeat: no-repeat;
 }
 
-/* Footer */
-
-footer {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+body {
+  color: white;
+  margin: 3.3rem 4.65rem;
 }
+
+/* Main Section */
+
+main {
+  display: flex;
+}
+
+main h1 {
+  font-family: var(--poppins);
+}
+
+main p {
+  font-family: var(--open-sans);
+}
+
+.column {
+  flex: 50%;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 5.25rem;
+}
+
+.logo {
+  height: 3.3rem;
+}
+
+/* Column 1 */
+
+.mockups {
+  width: 44.3125rem;
+  height: 31.625rem;
+}
+
+/* Column 2 */
+
+.desc-column {
+  position: relative;
+  padding-left: 3.3rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  letter-spacing: -0.25px;
+}
+
+.desc-title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.desc-content {
+  font-size: 1.15rem;
+  margin-top: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.register {
+  margin-top: 0.25rem;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--violet);
+  border-radius: 2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  font-size: 1.15rem;
+  font-family: var(--poppins);
+  padding: 1rem;
+  width: 12.5rem;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentColor;
+  }
+}
+
+.register:hover,
+.register:active,
+.register:focus {
+  background-color: var(--soft-magenta);
+}
+
+/* Social Links */
+
+.social-container {
+  position: absolute;
+  bottom: -3.5rem;
+  right: 0;
+}
+
+.social-link {
+  display: inline-flex;
+  border: 1px solid white;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: white;
+  height: 2.3rem;
+  width: 2.3rem;
+  margin: 0 0.4rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.social-ig {
+  font-size: 1.25rem;
+}
+
+.social-link:hover,
+.social-link:active,
+.social-link:focus {
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+}
+
+/* Footer */
 
 .attribution {
   font-size: 11px;
@@ -32,5 +148,11 @@ footer {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
+}
+
+.attribution a:hover,
+.attribution a:active,
+.attribution a:focus {
+  color: var(--soft-magenta);
 }
