@@ -36,10 +36,6 @@ main p {
   font-family: var(--open-sans);
 }
 
-.column {
-  flex: 50%;
-}
-
 /* Header */
 
 header {
@@ -52,14 +48,18 @@ header {
 
 /* Column 1 */
 
+.mockup-column {
+  flex: 116%;
+}
+
 .mockups {
-  width: 44.3125rem;
-  height: 31.625rem;
+  width: 100%; /* 709px */
 }
 
 /* Column 2 */
 
 .desc-column {
+  flex: 84%;
   position: relative;
   padding-left: 3.3rem;
   padding-top: 1rem;
@@ -155,4 +155,95 @@ header {
 .attribution a:active,
 .attribution a:focus {
   color: var(--soft-magenta);
+}
+
+/* Mobile Changes */
+
+@media (max-width: 1024px) {
+  /* Document */
+
+  html {
+    background-image: url(../images/bg-mobile.svg);
+
+    /* background-size: auto 50rem;
+    background-repeat: no-repeat; */
+  }
+
+  body {
+    margin: 4rem 4.25rem;
+  }
+
+  /* Main Section */
+
+  main {
+    display: inline;
+  }
+
+  /* Header */
+
+  header {
+    margin-bottom: 6.85rem;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  /* Column 1 */
+
+  .mockup-column {
+    flex: 100%;
+  }
+
+  .mockups {
+    max-width: 750px;
+    width: calc(100% - 0.8rem);
+    margin: 0.4rem;
+  }
+
+  /* Column 2 */
+
+  .desc-column {
+    text-align: center;
+    padding: 5rem 0 0 0;
+  }
+
+  .desc-title {
+    font-size: 3rem;
+  }
+
+  .desc-content {
+    font-size: 2rem;
+    letter-spacing: 0.05px;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .register {
+    margin-top: 1rem;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+    width: 25rem;
+    height: 5rem;
+  }
+
+  /* Social Links */
+
+  .social-container {
+    position: static;
+    margin: 8rem 0 2rem 0;
+  }
+
+  .social-link {
+    border: 1px solid white;
+    -moz-border-radius: 50%;
+    height: 3.25rem;
+    width: 3.25rem;
+    margin: 0 0.55rem;
+    font-size: 1.5rem;
+  }
+
+  .social-ig {
+    font-size: 1.75rem;
+  }
 }
