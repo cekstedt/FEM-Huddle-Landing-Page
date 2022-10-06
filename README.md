@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/cekstedt/huddle-landing-page)
+- Solution URL: [Github](https://github.com/cekstedt/FEM-Huddle-Landing-Page)
 - Live Site URL: [Netlify](https://melodic-tulumba-b3876b.netlify.app/)
 
 ## My process
