@@ -10,6 +10,7 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [How to install and run](#how-to-install-and-run)
 - [Author](#author)
 
 ## Overview
@@ -30,6 +31,7 @@ Users should be able to:
 
 - Solution URL: [Github](https://github.com/cekstedt/FEM-Huddle-Landing-Page)
 - Live Site URL: [Netlify](https://melodic-tulumba-b3876b.netlify.app/)
+- Challenge URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
 
 ## My process
 
@@ -37,6 +39,14 @@ Users should be able to:
 
 - Semantic HTML5
 - CSS Grid and Flexbox
+
+### How to install and run
+
+This project is HTML & CSS only, so simply clone the repo then open `src/index.html` in your browser.
+
+```
+git clone https://github.com/cekstedt/FreeCodeCamp-Rothko-Painting.git
+```
 
 ## Author
 
